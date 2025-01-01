@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+.animated-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .animated-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
