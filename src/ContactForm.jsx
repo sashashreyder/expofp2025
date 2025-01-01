@@ -1,14 +1,17 @@
 import React from 'react';
 import './ContactForm.css';
+import useScrollAnimation from './useScrollAnimation';
 
 function ContactForm() {
+    const ref = useScrollAnimation();
+
     return (
-        <section id="contact">
+        <section id="contact" ref={ref} className="animated-section">
             <div className="contact-form-section">
                 <div className="contact-form-container">
                     {/* Imagem */}
                     <div className="contact-image">
-                        <img src="/src/media/contact form.png" alt="Ícone de Contato" />
+                        <img src="https://i.postimg.cc/5yQRNm23/contact-form.png" alt="Ícone de Contato" />
                     </div>
                     
                     {/* Formulário de Contato */}
@@ -37,5 +40,6 @@ function ContactForm() {
 }
 
 export default ContactForm;
+
 
 

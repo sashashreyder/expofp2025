@@ -1,12 +1,16 @@
 import React from 'react';
+import useScrollAnimation from './useScrollAnimation';
 import './HeroSection.css';
 
 function HeroSection() {
+    const ref = useScrollAnimation();
+
+    const backgroundStyle = {
+        backgroundImage: 'url("https://i.postimg.cc/mDKGwkcm/NEUMORPHIC-CIRCLES-BACKGROUND.jpg")',
+    };
+
     return (
-        <section id="hero-section">
-            <div className="background-video">
-            
-            </div>
+        <section id="hero-section" ref={ref} className="animated-section" style={backgroundStyle}>
             <div className="content">
                 <h1 className="hello">Bem-vindo à Expo FP Brasil!</h1>
                 <h2 className="text">Plantas Baixas para eventos</h2>
@@ -22,7 +26,7 @@ function HeroSection() {
             </div>
             <div className="gif-mockup">
                 <img
-                    src="src/media/12.gif"
+                    src="https://i.postimg.cc/Pf8HqWc9/12.gif"
                     alt="GIF Mockup"
                     className="mockup-gif"
                 />
@@ -32,6 +36,7 @@ function HeroSection() {
 }
 
 export default HeroSection;
+
 
 
 

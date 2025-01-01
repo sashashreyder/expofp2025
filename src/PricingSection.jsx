@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import useScrollAnimation from './useScrollAnimation';
 import './PricingSection.css';
 
 function PricingSection() {
+  const ref = useScrollAnimation();
   const [showInfo, setShowInfo] = useState({
     basic: false,
     premium: false,
@@ -16,8 +18,7 @@ function PricingSection() {
   };
 
   return (
-    <section id="pricing" className="pricing-section">
-
+    <section id="pricing" ref={ref} className="pricing-section animated-section">
       <div className="pricing-card basic">
         <h3>Plano Básico</h3>
         <p className="price">R$29/mês</p>
@@ -29,7 +30,6 @@ function PricingSection() {
         <button className="info-btn" onClick={() => toggleInfo('basic')}>
           {showInfo.basic ? 'Menos Informações' : 'Mais Informações'}
         </button>
-
         <div className={`more-info ${showInfo.basic ? 'visible' : ''}`}>
           <p>Ideal para pequenos eventos que buscam soluções de navegação simples.</p>
         </div>
@@ -47,7 +47,6 @@ function PricingSection() {
         <button className="info-btn" onClick={() => toggleInfo('premium')}>
           {showInfo.premium ? 'Menos Informações' : 'Mais Informações'}
         </button>
-        
         <div className={`more-info ${showInfo.premium ? 'visible' : ''}`}>
           <p>Melhor para médios a grandes eventos que precisam de suporte aprimorado e personalização de marca.</p>
         </div>
@@ -74,4 +73,5 @@ function PricingSection() {
 }
 
 export default PricingSection;
+
 

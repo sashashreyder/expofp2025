@@ -1,25 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import useScrollAnimation from './useScrollAnimation';
 import './Navbar.css';
 
 function Navbar() {
+    const ref = useScrollAnimation();
     const [scrolled, setScrolled] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-            setScrolled(scrollPosition > 80);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
         <nav
+            ref={ref}
             id="navbar2"
-            className={`navbar2 ${scrolled ? 'scrolled' : 'transparent'}`}
+            className={`navbar2 animated-section ${scrolled ? 'scrolled' : 'transparent'}`}
         >
             <div className="navbar2-container">
                 <a className="navbar2-logo" href="#">

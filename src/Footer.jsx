@@ -1,9 +1,12 @@
 import React from 'react';
+import useScrollAnimation from './useScrollAnimation';
 import './Footer.css';
 
 function Footer() {
+    const ref = useScrollAnimation();
+
     return (
-        <footer className="footer">
+        <footer ref={ref} className="footer animated-section">
             <div className="footer-container">
                 <div className="footer-logo">
                     <img 
@@ -19,7 +22,7 @@ function Footer() {
                     <a href="#contact" className="footer-link">Contato</a>
                 </div>
                 <div className="footer-text">
-                    © 2024 Expo FP Brasil. Todos os direitos reservados.
+                    © 2025 Expo FP Brasil. Todos os direitos reservados.
                 </div>
             </div>
         </footer>
@@ -27,3 +30,4 @@ function Footer() {
 }
 
 export default Footer;
+

@@ -62,17 +62,17 @@ function Statistics() {
         <div className="stat-item">
           <div className="icon">🗺️</div>
           <h3 className="stat-number">{indoorSpace.toLocaleString()}M</h3>
-          <p>Indoor space mapped (m²)</p>
+          <p>Espaço interno mapeado (m²)</p>
         </div>
         <div className="stat-item">
           <div className="icon">📍</div>
           <h3 className="stat-number">{pointsOfInterest.toLocaleString()}</h3>
-          <p>Unique points-of-interest</p>
+          <p>Pontos de interesse únicos</p>
         </div>
         <div className="stat-item">
           <div className="icon">👥</div>
           <h3 className="stat-number">{monthlyUsers.toLocaleString()}k</h3>
-          <p>Monthly users</p>
+          <p>Usuários mensais</p>
         </div>
       </div>
     </section>
@@ -80,6 +80,7 @@ function Statistics() {
 }
 
 export default Statistics;
+
 
 
 

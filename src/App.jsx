@@ -7,6 +7,7 @@ import Statistics from './Statistics'
 import PricingSection from './PricingSection'
 import ContactForm from './ContactForm'
 import Footer from './Footer'
+import useScrollAnimation from "./useScrollAnimation";
 import './App.css'
 
 function App() {
