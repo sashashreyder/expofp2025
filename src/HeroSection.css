@@ -8,6 +8,7 @@
     align-items: center; 
     overflow: hidden;
     background-color: #000; 
+    background-size: cover;
 }
  
 .hero-content {
@@ -25,23 +26,6 @@
 .hero-content p {
     font-size: 1.5rem;
     margin: 0.5rem 0;
-}
-
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; 
-    z-index: 1;
-    object-fit: cover; 
-}
-
-.iframe-video {
-    border: none;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
 }
 
 .gif-mockup {
