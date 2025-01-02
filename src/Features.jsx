@@ -1,7 +1,4 @@
 import React from 'react';
-import feature1 from './media/feature1.png';
-import feature2 from './media/Feature2.png';
-import feature4 from './media/feature4.png';
 import useScrollAnimation from './useScrollAnimation';
 import './Features.css';
 
