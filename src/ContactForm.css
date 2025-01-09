@@ -94,3 +94,14 @@
     background-color: #07396f;
 }
 
+@media  (max-width: 570px) {
+     
+    .contact-form-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form-content {
+        width: 80%;
+    }
+}
