@@ -17,9 +17,9 @@ function Gallery() {
                     <Carousel.Item>
                         <div className="row justify-content-center">
                             <div className="col-md-3 col-6 gallery-item">
-                                <a href="https://i.postimg.cc/YCxMHtVS/MRO1.png" target="_blank" className="square-placeholder" rel="noreferrer">
+                                <a href="https://mroap24.expofp.com/" target="_blank" className="square-placeholder" rel="noreferrer">
                                     <div className="placeholder-content">
-                                        <img src="/src/media/MRO1.png" alt="MRO1" />
+                                        <img src="https://i.postimg.cc/YCxMHtVS/MRO1.png" alt="MRO1" />
                                     </div>
                                 </a>
                             </div>
@@ -52,7 +52,7 @@ function Gallery() {
                             <div className="col-md-3 col-6 gallery-item">
                                 <a href="https://sector24.expofp.com/" target="_blank" className="square-placeholder" rel="noreferrer">
                                     <div className="placeholder-content">
-                                        <img src="/src/media/sector.png" alt="Sector 24" />
+                                        <img src="https://i.postimg.cc/0QzsDDN6/sector.png" alt="Sector 24" />
                                     </div>
                                 </a>
                             </div>

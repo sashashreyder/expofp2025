@@ -10,7 +10,7 @@ function Navbar() {
         <nav
             ref={ref}
             id="navbar2"
-            className={`navbar2 animated-section ${scrolled ? 'scrolled' : 'transparent'}`}
+            className={`navbar2`}
         >
             <div className="navbar2-container">
                 <a className="navbar2-logo" href="#">
