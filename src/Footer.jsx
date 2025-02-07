@@ -9,11 +9,13 @@ function Footer() {
         <footer ref={ref} className="footer animated-section">
             <div className="footer-container">
                 <div className="footer-logo">
+                <a href="https://expofp.com/" target="_blank" rel="noopener noreferrer">
                     <img 
                         src="https://expofp.com/template/img/site-header-logo.png" 
                         alt="Logo do Expo FP" 
                         className="footer-logo-img" 
                     />
+                    </a>
                 </div>
                 <div className="footer-links">
                     <a href="#hero-section" className="footer-link">Início</a>

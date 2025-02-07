@@ -13,7 +13,7 @@ function Navbar() {
             className={`navbar2`}
         >
             <div className="navbar2-container">
-                <a className="navbar2-logo" href="https://expofp.com/">
+                <a className="navbar2-logo" href="https://expofp.com/" target="_blank" rel="noopener noreferrer">
                     <img
                         src="https://expofp.com/template/img/site-header-logo.png"
                         alt="Logo Expo FP"
