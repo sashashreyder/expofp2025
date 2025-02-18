@@ -32,10 +32,11 @@
    npm run dev
 
 🎯 Future Improvements
- Improve burger menu animation 🍔
- Add a 404 Page for unknown routes ❌
- Implement lazy loading for images 🖼️
- Enhance UI with subtle hover effects ✨
+
+ 1. Improve burger menu animation 🍔
+ 2. Add a 404 Page for unknown routes ❌
+ 3. Implement lazy loading for images 🖼️
+ 4. Enhance UI with subtle hover effects ✨
  
  📩 Contact
  💻 GitHub: sashashreyder
